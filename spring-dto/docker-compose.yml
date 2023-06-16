@@ -20,6 +20,19 @@ services:
     networks:
       - test-network
 
+  customer-service:
+    container_name: customer-service
+    build:
+      context: ./
+      dockerfile: ./Dockerfile
+    image: customer-service:latest
+    environment:
+      - SPRING_DATASOURCE_URL=jdbc:postgresql://postgres-dto:5431/dto-database
+    depends_on:
+      - postgres-dto
+    networks:
+      - test-network
+
 
 networks:
   test-network:
