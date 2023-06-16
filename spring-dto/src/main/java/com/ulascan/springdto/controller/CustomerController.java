@@ -1,7 +1,7 @@
 package com.ulascan.springdto.controller;
 
 import com.ulascan.springdto.dto.CustomerDTO;
-import com.ulascan.springdto.service.ICustomerService;
+import com.ulascan.springdto.service.customer.ICustomerService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;

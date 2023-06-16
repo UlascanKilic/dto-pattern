@@ -1,4 +1,4 @@
-package com.ulascan.springdto.service;
+package com.ulascan.springdto.service.customer;
 
 import com.ulascan.springdto.dto.CustomerDTO;
 import org.springframework.stereotype.Service;
