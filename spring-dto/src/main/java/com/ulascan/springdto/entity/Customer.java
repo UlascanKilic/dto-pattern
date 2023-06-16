@@ -24,7 +24,7 @@ import java.util.Set;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-@Table(name = "user")
+@Table(name = "_user")
 public class Customer {
 
     @Id
