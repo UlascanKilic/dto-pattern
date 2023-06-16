@@ -4,9 +4,7 @@ import com.ulascan.springdto.dto.CustomerDTO;
 import com.ulascan.springdto.service.customer.ICustomerService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -23,5 +21,11 @@ public class CustomerController {
         return ResponseEntity.ok(customerService.getAllCustomers());
     }
 
+    @PostMapping
+    public void saveCustomer(@RequestBody CustomerDTO customerDTO)
+    {
+        customerService.addCustomer(customerDTO);
+
+    }
 
 }

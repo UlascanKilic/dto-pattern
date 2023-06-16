@@ -6,4 +6,5 @@ import java.util.List;
 
 public interface ICustomerService {
     List<CustomerDTO> getAllCustomers();
+    void addCustomer(CustomerDTO customerDTO);
 }

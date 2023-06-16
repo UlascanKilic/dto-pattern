@@ -2,6 +2,7 @@ package com.ulascan.springdto.entity;
 
 import com.ulascan.springdto.enums.Gender;
 
+import com.ulascan.springdto.enums.Role;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Table;
 import jakarta.persistence.Id;
@@ -14,7 +15,6 @@ import lombok.Builder;
 import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
 
-import java.util.LinkedHashSet;
 import java.util.Set;
 
 
@@ -41,7 +41,6 @@ public class Customer {
 
     private Gender gender;
 
-    @OneToMany(mappedBy = "customer", orphanRemoval = true)
-    private Set<RoleEntity> roles = new LinkedHashSet<>();
+    private Set<Role> roles;
 
 }

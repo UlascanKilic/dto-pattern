@@ -13,15 +13,11 @@ public class CustomerDTOMapper implements Function<Customer, CustomerDTO> {
     @Override
     public CustomerDTO apply(Customer customer) {
         return new CustomerDTO(
-                customer.getId(),
                 customer.getFirstName(),
                 customer.getEmail(),
                 customer.getGender(),
                 customer.getAge(),
-                customer.getRoles()
-                        .stream()
-                        .map(RoleEntity::getRole)
-                        .collect(Collectors.toSet()),
+                customer.getRoles(),
                 customer.getUserName());
     }
 }
