@@ -2,7 +2,6 @@ package com.ulascan.springdto.service.customer;
 
 import com.ulascan.springdto.dto.CustomerDTO;
 import com.ulascan.springdto.entity.Customer;
-import com.ulascan.springdto.entity.RoleEntity;
 import com.ulascan.springdto.repository.ICustomerRepository;
 import com.ulascan.springdto.util.mapper.CustomerDTOMapper;
 import lombok.RequiredArgsConstructor;

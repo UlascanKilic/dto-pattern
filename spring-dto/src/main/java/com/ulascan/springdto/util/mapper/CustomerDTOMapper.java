@@ -2,7 +2,6 @@ package com.ulascan.springdto.util.mapper;
 
 import com.ulascan.springdto.dto.CustomerDTO;
 import com.ulascan.springdto.entity.Customer;
-import com.ulascan.springdto.entity.RoleEntity;
 import org.springframework.stereotype.Service;
 
 import java.util.function.Function;
